@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc5c3d2c0e44c5a85ea4e6a0efd0793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  booleanColor: 0
+  booleanColor: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43ff9f4b52644c48565b347d4d02766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cubeOneGo: {fileID: 1649914805}
+  cubeTwoGo: {fileID: 90023805}
   cubeThreeGo: {fileID: 929201943}
   cubeFourGo: {fileID: 1331476897}
 --- !u!1001 &929201942
@@ -444,6 +446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubeOneGo: {fileID: 1649914805}
   cubeTwoGo: {fileID: 90023805}
+  booleanColor: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubeOneGo: {fileID: 1649914805}
   cubeTwoGo: {fileID: 90023805}
+  booleanColor: 0
 --- !u!1001 &1649914804
 PrefabInstance:
   m_ObjectHideFlags: 0
