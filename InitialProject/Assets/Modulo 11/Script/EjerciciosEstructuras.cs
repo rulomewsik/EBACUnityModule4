@@ -39,7 +39,7 @@ namespace Modulo_11.Script
         //2)
         private int[] OrdenarArregloEnteros(int[] arregloDesordenado)
         {
-            return arregloDesordenado.OrderBy(i => i).ToArray();
+            return arregloDesordenado.OrderByDescending(i => i).ToArray();
         }
 
         //3)
