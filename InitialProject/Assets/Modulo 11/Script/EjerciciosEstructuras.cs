@@ -22,6 +22,15 @@ namespace Modulo_11.Script
             Debug.Log("--- HashSet Sin Elementos Repetidos ---");
             var listaRepetida = new List<int> {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5};
             Debug.Log($"{string.Join(", ", EliminarElementosRepetidos(listaRepetida))}");
+            
+            //4)
+            var stack = new Stack<string>();
+            stack.Push("Unity");
+            stack.Push("De");
+            stack.Push("Mundo");
+            stack.Push("Hola");
+            
+            ImprimirValoresStack(stack);
         }
 
         //1)
@@ -46,6 +55,24 @@ namespace Modulo_11.Script
         private HashSet<int> EliminarElementosRepetidos(List<int> listaRepetida)
         {
             return new HashSet<int>(listaRepetida.Distinct());
+        }
+        
+        //4)
+        private void ImprimirValoresStack(Stack<string> stackStrings)
+        {
+            var queueStrings = new Queue<string>();
+
+            Debug.Log("--- Stack Original ---");
+            Debug.Log($"{string.Join(", ", stackStrings)}");
+
+            while (stackStrings.Count > 0)
+            {
+                queueStrings.Enqueue(stackStrings.Peek());
+                stackStrings.Pop();
+            }
+            
+            Debug.Log("--- Queue Generado ---");
+            Debug.Log($"{string.Join(", ", queueStrings)}");
         }
     }
 }
